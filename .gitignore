@@ -1,0 +1,39 @@
+# maven ignore
+target/
+*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
+*.class
+*.swp
+*/buildNumber.properties
+buildNumber.properties
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+.metadata/
+
+# temp ignore
+logs/
+*.doc
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+# system ignore
+.DS_Store
+Thumbs.db
+
+pop-crm-vender-web/pop-crm.log.path_IS_UNDEFINED/assistant-configcenter.log.2017-03-10
+pop-crm-vender-web/pop-crm.log.path_IS_UNDEFINED/pop-crm-sql.log.2017-03-10
