@@ -10,6 +10,7 @@
     <module>test-platform-web</module>
     <module>test-platform-domain</module>
     <module>test-platform-service</module>
+    <module>hahahahahahaha</module>
   </modules>
   <name>test-platform Maven Webapp</name>
   <url>http://maven.apache.org</url>
