@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/hahahahahahaha/hahahahahahaha.iml" filepath="$PROJECT_DIR$/hahahahahahaha/hahahahahahaha.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-platform.iml" filepath="$PROJECT_DIR$/test-platform.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-platform-dao/test-platform-dao.iml" filepath="$PROJECT_DIR$/test-platform-dao/test-platform-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-platform-domain/test-platform-domain.iml" filepath="$PROJECT_DIR$/test-platform-domain/test-platform-domain.iml" />

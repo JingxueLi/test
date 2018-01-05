@@ -22,11 +22,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="test-platform" />
+        <module name="test-platform-dao" />
+        <module name="test-platform-domain" />
+        <module name="test-platform-service" />
+        <module name="test-platform-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="test-platform" target="1.5" />
+      <module name="test-platform-dao" target="1.5" />
+      <module name="test-platform-domain" target="1.5" />
+      <module name="test-platform-service" target="1.5" />
+      <module name="test-platform-web" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
