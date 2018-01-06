@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
+
+    <!--&lt;!&ndash;pop crm 测试环境数据源 added by laichendong&ndash;&gt;-->
+    <!--<bean id="popCrmDataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
+        <!--<property name="driverClassName" value="${pop-crm.crm.jdbc.driver}"/>-->
+        <!--<property name="url" value="${pop-crm.crm.jdbc.url}"/>-->
+        <!--<property name="username" value="${pop-crm.crm.jdbc.username}"/>-->
+        <!--<property name="password" value="${pop-crm.crm.jdbc.password}"/>-->
+        <!--&lt;!&ndash;initialSize: 初始化连接&ndash;&gt;-->
+        <!--<property name="initialSize" value="10"/>-->
+        <!--&lt;!&ndash;maxIdle: 最大空闲连接&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="maxIdle" value="5"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;minIdle: 最小空闲连接&ndash;&gt;-->
+        <!--<property name="minIdle" value="3"/>-->
+        <!--&lt;!&ndash;maxActive: 最大连接数量&ndash;&gt;-->
+        <!--<property name="maxActive" value="20"/>-->
+        <!--&lt;!&ndash;removeAbandoned: 是否自动回收超时连接&ndash;&gt;-->
+        <!--<property name="removeAbandoned" value="true"/>-->
+        <!--&lt;!&ndash;removeAbandonedTimeout: 超时时间(以秒数为单位)&ndash;&gt;-->
+        <!--<property name="removeAbandonedTimeout" value="300"/>-->
+        <!--&lt;!&ndash;maxWait: 超时等待时间以毫秒为单位 6000毫秒/1000等于60秒&ndash;&gt;-->
+        <!--<property name="maxWait" value="-1"/>-->
+
+        <!--&lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;-->
+        <!--<property name="timeBetweenEvictionRunsMillis" value="60000" />-->
+
+        <!--&lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;-->
+        <!--<property name="minEvictableIdleTimeMillis" value="300000" />-->
+
+        <!--<property name="validationQuery" value="SELECT 'x'" />-->
+        <!--<property name="testWhileIdle" value="true" />-->
+        <!--<property name="testOnBorrow" value="false" />-->
+        <!--<property name="testOnReturn" value="false" />-->
+
+        <!--<property name="poolPreparedStatements" value="false" />-->
+
+        <!--&lt;!&ndash; 配置监控统计拦截的filters &ndash;&gt;-->
+        <!--<property name="filters" value="stat" />-->
+    <!--</bean>-->
+
+    <!--<bean id="popCrmDataSource1" class="com.alibaba.druid.pool.DruidDataSource">-->
+        <!--<property name="driverClassName" value="${pop-crm.crm.jdbc.driver1}"/>-->
+        <!--<property name="url" value="${pop-crm.crm.jdbc.url1}"/>-->
+        <!--<property name="username" value="${pop-crm.crm.jdbc.username1}"/>-->
+        <!--<property name="password" value="${pop-crm.crm.jdbc.password1}"/>-->
+        <!--&lt;!&ndash;initialSize: 初始化连接&ndash;&gt;-->
+        <!--<property name="initialSize" value="10"/>-->
+        <!--&lt;!&ndash;maxIdle: 最大空闲连接&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="maxIdle" value="5"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;minIdle: 最小空闲连接&ndash;&gt;-->
+        <!--<property name="minIdle" value="3"/>-->
+        <!--&lt;!&ndash;maxActive: 最大连接数量&ndash;&gt;-->
+        <!--<property name="maxActive" value="20"/>-->
+        <!--&lt;!&ndash;removeAbandoned: 是否自动回收超时连接&ndash;&gt;-->
+        <!--<property name="removeAbandoned" value="true"/>-->
+        <!--&lt;!&ndash;removeAbandonedTimeout: 超时时间(以秒数为单位)&ndash;&gt;-->
+        <!--<property name="removeAbandonedTimeout" value="300"/>-->
+        <!--&lt;!&ndash;maxWait: 超时等待时间以毫秒为单位 6000毫秒/1000等于60秒&ndash;&gt;-->
+        <!--<property name="maxWait" value="-1"/>-->
+
+        <!--&lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;-->
+        <!--<property name="timeBetweenEvictionRunsMillis" value="60000" />-->
+
+        <!--&lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;-->
+        <!--<property name="minEvictableIdleTimeMillis" value="300000" />-->
+
+        <!--<property name="validationQuery" value="SELECT 'x'" />-->
+        <!--<property name="testWhileIdle" value="true" />-->
+        <!--<property name="testOnBorrow" value="false" />-->
+        <!--<property name="testOnReturn" value="false" />-->
+
+        <!--<property name="poolPreparedStatements" value="false" />-->
+
+        <!--&lt;!&ndash; 配置监控统计拦截的filters &ndash;&gt;-->
+        <!--<property name="filters" value="stat" />-->
+    <!--</bean>-->
+    <!--<bean id="popCrmDataSource2" class="com.alibaba.druid.pool.DruidDataSource">-->
+        <!--<property name="driverClassName" value="${pop-crm.crm.jdbc.driver2}"/>-->
+        <!--<property name="url" value="${pop-crm.crm.jdbc.url2}"/>-->
+        <!--<property name="username" value="${pop-crm.crm.jdbc.username2}"/>-->
+        <!--<property name="password" value="${pop-crm.crm.jdbc.password2}"/>-->
+        <!--&lt;!&ndash;initialSize: 初始化连接&ndash;&gt;-->
+        <!--<property name="initialSize" value="10"/>-->
+        <!--&lt;!&ndash;maxIdle: 最大空闲连接&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="maxIdle" value="5"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;minIdle: 最小空闲连接&ndash;&gt;-->
+        <!--<property name="minIdle" value="3"/>-->
+        <!--&lt;!&ndash;maxActive: 最大连接数量&ndash;&gt;-->
+        <!--<property name="maxActive" value="20"/>-->
+        <!--&lt;!&ndash;removeAbandoned: 是否自动回收超时连接&ndash;&gt;-->
+        <!--<property name="removeAbandoned" value="true"/>-->
+        <!--&lt;!&ndash;removeAbandonedTimeout: 超时时间(以秒数为单位)&ndash;&gt;-->
+        <!--<property name="removeAbandonedTimeout" value="300"/>-->
+        <!--&lt;!&ndash;maxWait: 超时等待时间以毫秒为单位 6000毫秒/1000等于60秒&ndash;&gt;-->
+        <!--<property name="maxWait" value="-1"/>-->
+
+        <!--&lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;-->
+        <!--<property name="timeBetweenEvictionRunsMillis" value="60000" />-->
+
+        <!--&lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;-->
+        <!--<property name="minEvictableIdleTimeMillis" value="300000" />-->
+
+        <!--<property name="validationQuery" value="SELECT 'x'" />-->
+        <!--<property name="testWhileIdle" value="true" />-->
+        <!--<property name="testOnBorrow" value="false" />-->
+        <!--<property name="testOnReturn" value="false" />-->
+
+        <!--<property name="poolPreparedStatements" value="false" />-->
+
+        <!--&lt;!&ndash; 配置监控统计拦截的filters &ndash;&gt;-->
+        <!--<property name="filters" value="stat" />-->
+    <!--</bean>-->
+    <!--<bean id="popCrmDataSource3" class="com.alibaba.druid.pool.DruidDataSource">-->
+        <!--<property name="driverClassName" value="${pop-crm.crm.jdbc.driver3}"/>-->
+        <!--<property name="url" value="${pop-crm.crm.jdbc.url3}"/>-->
+        <!--<property name="username" value="${pop-crm.crm.jdbc.username3}"/>-->
+        <!--<property name="password" value="${pop-crm.crm.jdbc.password3}"/>-->
+        <!--&lt;!&ndash;initialSize: 初始化连接&ndash;&gt;-->
+        <!--<property name="initialSize" value="10"/>-->
+        <!--&lt;!&ndash;maxIdle: 最大空闲连接&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="maxIdle" value="5"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;minIdle: 最小空闲连接&ndash;&gt;-->
+        <!--<property name="minIdle" value="3"/>-->
+        <!--&lt;!&ndash;maxActive: 最大连接数量&ndash;&gt;-->
+        <!--<property name="maxActive" value="20"/>-->
+        <!--&lt;!&ndash;removeAbandoned: 是否自动回收超时连接&ndash;&gt;-->
+        <!--<property name="removeAbandoned" value="true"/>-->
+        <!--&lt;!&ndash;removeAbandonedTimeout: 超时时间(以秒数为单位)&ndash;&gt;-->
+        <!--<property name="removeAbandonedTimeout" value="300"/>-->
+        <!--&lt;!&ndash;maxWait: 超时等待时间以毫秒为单位 6000毫秒/1000等于60秒&ndash;&gt;-->
+        <!--<property name="maxWait" value="-1"/>-->
+
+        <!--&lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;-->
+        <!--<property name="timeBetweenEvictionRunsMillis" value="60000" />-->
+
+        <!--&lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;-->
+        <!--<property name="minEvictableIdleTimeMillis" value="300000" />-->
+
+        <!--<property name="validationQuery" value="SELECT 'x'" />-->
+        <!--<property name="testWhileIdle" value="true" />-->
+        <!--<property name="testOnBorrow" value="false" />-->
+        <!--<property name="testOnReturn" value="false" />-->
+
+        <!--<property name="poolPreparedStatements" value="false" />-->
+
+        <!--&lt;!&ndash; 配置监控统计拦截的filters &ndash;&gt;-->
+        <!--<property name="filters" value="stat" />-->
+    <!--</bean>-->
+
+</beans>
