@@ -22,6 +22,24 @@
         </dependency>
     </dependencies>
 
+    <profiles>
+        <!--开发环境-->
+        <profile>
+            <id>development</id>
+            <properties/>
+        </profile>
+        <!--预发布环境-->
+        <profile>
+            <id>yf</id>
+            <properties/>
+        </profile>
+        <!--生产环境-->
+        <profile>
+            <id>production</id>
+            <properties/>
+        </profile>
+    </profiles>
+
     <build>
         <finalName>test-platform-web</finalName>
         <plugins>

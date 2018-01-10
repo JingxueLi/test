@@ -15,7 +15,8 @@
     <url>http://maven.apache.org</url>
 
     <properties>
-        <projectVersion>${version}</projectVersion>
+        <test.platform.version>${version}</test.platform.version>
+        <test.platform.web.version>1.0-SNAPSHOT</test.platform.web.version>
         <lombok.version>1.16.6</lombok.version>
         <logback.version>1.1.7</logback.version>
         <slf4j.version>1.7.21</slf4j.version>
@@ -25,18 +26,23 @@
         <dependencies>
             <dependency>
                 <groupId>com.ljx</groupId>
+                <artifactId>test-platform-web</artifactId>
+                <version>${test.platform.web.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ljx</groupId>
                 <artifactId>test-platform-service</artifactId>
-                <version>${projectVersion}</version>
+                <version>${test.platform.web.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ljx</groupId>
                 <artifactId>test-platform-dao</artifactId>
-                <version>${projectVersion}</version>
+                <version>${test.platform.web.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ljx</groupId>
                 <artifactId>test-platform-domain</artifactId>
-                <version>${projectVersion}</version>
+                <version>${test.platform.web.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
