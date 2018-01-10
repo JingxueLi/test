@@ -11,5 +11,11 @@
 
     <artifactId>test-platform-dao</artifactId>
 
+    <dependencies>
+            <dependency>
+                <groupId>com.ljx</groupId>
+                <artifactId>test-platform-domain</artifactId>
+            </dependency>
+    </dependencies>
 
 </project>

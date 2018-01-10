@@ -7,18 +7,39 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>test-platform-web</module>
-        <module>test-platform-Service</module>
-        <module>test-platform-Domain</module>
-        <module>test-platform-Dao</module>
+        <module>test-platform-service</module>
+        <module>test-platform-domain</module>
+        <module>test-platform-dao</module>
     </modules>
-    <name>test-platform Maven Webapp</name>
+    <name>test-platform</name>
     <url>http://maven.apache.org</url>
 
     <properties>
+        <projectVersion>${version}</projectVersion>
         <lombok.version>1.16.6</lombok.version>
         <logback.version>1.1.7</logback.version>
         <slf4j.version>1.7.21</slf4j.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.ljx</groupId>
+                <artifactId>test-platform-service</artifactId>
+                <version>${projectVersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ljx</groupId>
+                <artifactId>test-platform-dao</artifactId>
+                <version>${projectVersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ljx</groupId>
+                <artifactId>test-platform-domain</artifactId>
+                <version>${projectVersion}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <!--系统外部依赖-->
