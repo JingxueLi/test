@@ -8,17 +8,87 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>test-platform-web</artifactId>
     <packaging>war</packaging>
-    <name>test-platform-web Maven Webapp</name>
+    <name>test-platform-web</name>
     <url>http://maven.apache.org</url>
+
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
+            <groupId>com.ljx</groupId>
+            <artifactId>test-platform-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ljx</groupId>
+            <artifactId>test-platform-domain</artifactId>
         </dependency>
     </dependencies>
+
+    <profiles>
+        <!--开发环境-->
+        <profile>
+            <id>development</id>
+            <properties/>
+        </profile>
+        <!--预发布环境-->
+        <profile>
+            <id>yf</id>
+            <properties/>
+        </profile>
+        <!--生产环境-->
+        <profile>
+            <id>production</id>
+            <properties/>
+        </profile>
+    </profiles>
+
     <build>
         <finalName>test-platform-web</finalName>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <encoding>utf-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.4</version>
+                <configuration>
+                    <encoding>utf-8</encoding>
+                    <charset>utf-8</charset>
+                    <docencoding>utf-8</docencoding>
+                    <aggregate>true</aggregate>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.4</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 </project>
